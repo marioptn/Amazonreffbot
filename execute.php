@@ -45,9 +45,9 @@ if(isset($message['text']))
 	
   if(strpos($text, "/start") === 0 )
   {
-	$response = "Ciao $firstname! \nInnanzitutto vorrei ringraziarti per interessamento e per la voglia di supportarmi. \nTi spiego brevemente cosa bisogna fare per convertire i link; \nÈ molto semplice; basta semplicemente copiare il link del prodotto che vuoi convertire e mandarlo qui; in questo chat. \nAl resto ci penso io! \nDopo che ti ho mandato il link convertito ti basta semplicemente aprirlo e comprare il prodotto da lì. \nGrazie mille!
-\n \nSe non hai voglia di convertire ogni singolo link ti invito cortesemente a salvare nei preferiti la home con il referral attivo. \n sarà attivo per le prime tre ricerche che farete e poi bisognerebbe riaprilo. \nIl link lo troverete nella descrizione del bot.
-\n \nBot realizzato da Neschastnyy.";
+	$response = "Ciao $firstname! \nInnanzitutto vorrei ringraziarti per interesse e per la voglia di supportarmi. \nTi spiego brevemente cosa bisogna fare per convertire i link; \nÈ molto semplice; basta semplicemente copiare il link del prodotto che vuoi convertire e mandarlo qui; in questa chat. \nAl resto ci penso io! \nDopo che ti ho mandato il link convertito ti basta semplicemente aprirlo e comprare il prodotto da lì. \nGrazie mille!
+\n \nSe non hai voglia di convertire ogni singolo link ti invito cortesemente a salvare nei preferiti la home con il referral attivo. \nSarà attivo per le prime tre ricerche che farete e poi bisognerebbe riaprilo. \nIl link lo troverete nella descrizione del bot.
+\n \nBot realizzato da @Neschastnyy.";
   }
   elseif($dominioAmazon == "amazon")
   {	  
