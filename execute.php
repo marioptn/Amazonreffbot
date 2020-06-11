@@ -192,3 +192,20 @@ header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
+
+
+
+
+
+elseif($text=="/contatti")
+{
+	$response = "Per qualsiasi dubbio contattami in chat privata:@Neschastnyy ";
+}
+elseif($text=="Grazie")
+{
+	$response = "Grazie a te!";
+}
+elseif($text=="/donate")
+{
+	$response = "Ve avete voglia di supportarmi direttamente potreste farlo con una piccola donazione PayPal: PayPal.me/marioptn <3";
+}
