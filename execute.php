@@ -192,11 +192,3 @@ header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
-
-
-fetch(url, {
-  method: 'Grazie',
-  body: formData,
-})
-  .then(response => response.json()) // read the response stream as JSON
-  .then(data => console.log('Grazie mille a te! <3', data))
