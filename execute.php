@@ -105,7 +105,7 @@ function set_referral_URL($url){
 * crea il link con referral di gearbest 
 */
 function set_referral_URL_GB($url){
-	$referral = "10851947";
+	$referral = "10211133";
 	$url_edited = "";
 	$parsed_url_array = parse_url($url);
 	
