@@ -1,7 +1,7 @@
 <?php 
 
 // PARAMETRI DA MODIFICARE 
-$WEBHOOK_URL = 'https://amazonreff.herokuapp.com/register.php';
+$WEBHOOK_URL = 'https://neschyzon.herokuapp.com/register.php';
 $BOT_TOKEN = '1497600949:AAFcjr6iXaOZMBHCVJE_ewnVkSHJ5gfYVeo';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
