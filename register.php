@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 // PARAMETRI DA MODIFICARE 
 $WEBHOOK_URL = 'https://amazonreff.herokuapp.com/register.php';
