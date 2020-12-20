@@ -23,7 +23,7 @@ $text = trim($text);
 $array1 = array();
 
 		
-// gestisco la richiesta
+// gestisco la richiestay
 $response = "";
 
 if(isset($message['text']))
