@@ -164,7 +164,27 @@ function get_string_between($string, $start, $end){
     return substr($string, $ini, $len);
 }
 
-
+function make_bitly_url($url,$login,$format = 'xml',$version = '2.0.1')
+{
+	//create the URL
+	$bitly = 'http://api.bit.ly/shorten?version='.$version.'&longUrl='.urlencode($url).'&login='.$login.'&apiKey=R_c7d78316d223d5a1d7827d58d80e76be'.'&format='.$format;
+	
+	//get the url
+	//could also use cURL here
+	$response = file_get_contents($bitly);
+	
+	//parse depending on desired format
+	if(strtolower($format) == 'json')
+	{
+		$json = @json_decode($response,true);
+		return $json['results'][$url]['shortUrl'];
+	}
+	else //xml
+	{
+		$xml = simplexml_load_string($response);
+		return 'http://bit.ly/'.$xml->results->nodeKeyVal->hash;
+	}
+}
 
 header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $response);
