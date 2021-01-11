@@ -23,7 +23,7 @@ $text = trim($text);
 $array1 = array();
 
 		
-// gestisco la richiestay
+// gestisco la richiesta
 $response = "";
 
 if(isset($message['text']))
@@ -45,9 +45,7 @@ if(isset($message['text']))
 	
   if(strpos($text, "/start") === 0 )
   {
-	$response = "Ciao $firstname! \nInnanzitutto vorrei ringraziarti per interesse e per la voglia di supportarmi. \nTi spiego brevemente cosa bisogna fare per convertire i link; \nÈ molto semplice; basta semplicemente copiare il link del prodotto che vuoi convertire e mandarlo qui; in questa chat. \nAl resto ci penso io! \nDopo che ti ho mandato il link convertito ti basta semplicemente aprirlo e comprare il prodotto da lì. \nGrazie mille!
-\n \nSe non hai voglia di convertire ogni singolo link ti invito cortesemente a salvare nei preferiti la home con il referral attivo. \nSarà attivo per le prime tre ricerche che farete e poi bisognerebbe riaprilo. \nIl link lo troverete nella descrizione del bot.
-\n \nBot realizzato da @Neschastnyy.";
+	$response = "Ciao $firstname! \nMandami un link Amazon o condividilo direttamente con me da altre app! \nTi rispondero' con il link affiliato! Grazie mille!\n\nCreated by @neschastny";
   }
   elseif($dominioAmazon == "amazon")
   {	  
@@ -59,7 +57,7 @@ if(isset($message['text']))
 	$pollicesym =  json_decode('"\uD83D\uDC4D"');
 	$worldsym = json_decode('"\uD83C\uDF0F"');
 	$obj_desc = $testoLink;
-	$short = make_bitly_url($url_affiliate,'ghir0','json');
+	$short = make_bitly_url($url_affiliate,'arioptn-21','json');
 	$response = "$obj_desc\n$worldsym $short";
 	
   }
@@ -105,7 +103,7 @@ function set_referral_URL($url){
 * crea il link con referral di gearbest 
 */
 function set_referral_URL_GB($url){
-	$referral = "10211133";
+	$referral = "10851947";
 	$url_edited = "";
 	$parsed_url_array = parse_url($url);
 	
