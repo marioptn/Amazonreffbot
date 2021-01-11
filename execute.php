@@ -1,4 +1,9 @@
 <?php
+
+elseif($text=="!home")
+{
+	$response = "https://www.amazon.it/?tag=arioptn-21&linkCode=ez";
+}
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
