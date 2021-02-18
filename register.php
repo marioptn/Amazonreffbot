@@ -2,7 +2,7 @@
 
 // PARAMETRI DA MODIFICARE
 $WEBHOOK_URL = 'https://neschyzon.heroku.com/webhook.php';
-$BOT_TOKEN = '{1469266648:AAG41bMmEPyjv31lQP-AogpDRdDwkxkZrlk}';
+$BOT_TOKEN = '{1509063916:AAGzps_-BTPUizU7bBYn3brZNRfBBuGlKxE}';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
 $parameters = array('url' => $WEBHOOK_URL);
